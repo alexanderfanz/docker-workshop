@@ -11,3 +11,7 @@ services:
       - "5000:5000"
   redis:
     image: redis:3.2-alpine
+    volumes:
+      - redis_data:/data
+volumes:
+  redis_data:
